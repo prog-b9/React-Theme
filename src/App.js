@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Landing from "./components/home/Landing";
 import Navbar from "./components/layout/Navbar";
+import About from "./components/home/About";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -24,6 +25,7 @@ function App() {
     <div className="App" data-theme={theme}>
       <Navbar theme={theme} handelSwitchTheme={handelSwitchTheme} />
       <Landing />
+      <About />
     </div>
   );
 }
