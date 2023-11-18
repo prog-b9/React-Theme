@@ -1,0 +1,24 @@
+installation
+
+1- npm install -D tailwindcss
+2- npx tailwindcss init
+3- npm i -D daisyui@latest
+
+
+
+file : tailwind.config
+1- content: ["./src/**/*.{js,jsx,ts,tsx}",],
+2- plugins: [require("daisyui")],
+3- daisyui: {
+    themes: ["light", "dark"],
+  },
+
+
+file : index.css
+1- @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+//////ENT run start//////
+
+npm run start
